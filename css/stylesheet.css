@@ -1,3 +1,9 @@
+body {
+    margin:0;
+    background-color: lavenderblush;
+    color: rgb(0, 0, 0);
+}
+
 .sidebar {
     margin: 0;
     padding: 0;
@@ -48,3 +54,4 @@
       float: none;
     }
   }
+
