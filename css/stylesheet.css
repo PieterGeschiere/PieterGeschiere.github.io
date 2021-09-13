@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background-color: lavenderblush;
+  height: 2000px;
+  background: linear-gradient(141deg, #0f9fb8 0%, #1fdbc2 25%, #2ce874 80%);
   color: rgb(0, 0, 0);
 }
 
