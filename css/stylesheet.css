@@ -1,65 +1,100 @@
 body {
-    margin:0;
-    background-color: lavenderblush;
-    color: rgb(0, 0, 0);
+  margin: 0;
+  background-color: lavenderblush;
+  color: rgb(0, 0, 0);
 }
 
 .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color:rgb(7, 206, 7);
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(7, 206, 7);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  outline-style: double;
+  outline-color: black;
+  outline-width: thick;
+  font-size: 20px;
+}
 
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: green;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.collapsible {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline-style: double;
+  outline-color: black;
+  outline-width: thick;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+.colcontent {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+div.content { 
+  margin: 0 0 200px 200px;
+  padding: 1px 16px;
+  height: 100%;
+  font-size: 25px;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+table th,
+td {
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
   .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
+    float: left;
   }
-
-  .sidebar a.active {
-    background-color:green;
-    color: white;
-  }
-
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-
-
   div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-    font-size: 25px;
+    margin-left: 0;
   }
+}
 
-  table {
-    border: 2px solid black;
-    border-collapse: collapse;
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
   }
-  table th, td {
-    border: 2px solid black;
-  }
-
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
+}
