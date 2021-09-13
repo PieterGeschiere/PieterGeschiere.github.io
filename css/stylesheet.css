@@ -36,6 +36,7 @@ body {
     margin-left: 200px;
     padding: 1px 16px;
     height: 1000px;
+    font-size: 25px;
   }
 
   @media screen and (max-width: 700px) {
