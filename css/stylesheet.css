@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: rgb(7, 206, 7);
+  background-color: limegreen;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -73,6 +73,7 @@ div.content {
 table {
   border: 2px solid black;
   border-collapse: collapse;
+  background-color: white;
 }
 table th,
 td {

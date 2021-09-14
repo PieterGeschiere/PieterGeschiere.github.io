@@ -18,8 +18,54 @@
 </body>
 <main>
     <div class="content">
-        <h1>Damen Hackerone your-surpise veracode maxxton</h1>
+        <h1>Blog</h1>
+        <p>
+            Damen Hackerone your-surpise veracode maxxton
+        </p>
+
+        <button type="button" class="collapsible">Studiekeuze</button>
+        <div class="colcontent">
+            <p> Vorig Jaar heb ik fysiotherapie gedaan in breda, maar aan het eind van het jaar kwam ik er achter dat het toch niet iets voor mij was.
+                Vervolgens ben ik gaan zoeken naar waar mijn interesses liggen en daar kwam eigenlijk uit dat ICT mij erg leuk leek om te doen.
+                Dit kom waarschijnlijk omdat ik vaak achter mijn computer te vinden ben en dat al vanaf jonge leeftijd.</p>
+        </div>
+
+        <button type="button" class="collapsible">SWOT analyse</button>
+        <div class="colcontent">
+            <p><img src="/pics/swot.PNG" alt="swot"></p>
+        </div>
+
+        <button type="button" class="collapsible">Programmeerervaring</button>
+        <div class="colcontent">
+            <p>Lorem ipsum...</p>
+        </div>
+
+        <button type="button" class="collapsible">Feedback</button>
+        <div class="colcontent">
+            <p>Lorem ipsum...</p>
+        </div>
+
+        <button type="button" class="collapsible">Artikel</button>
+        <div class="colcontent">
+            <p>Lorem ipsum...</p>
+        </div>
     </div>
-    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 </main>
+
 </html>
